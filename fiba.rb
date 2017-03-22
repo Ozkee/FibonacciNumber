@@ -19,3 +19,5 @@ end
 
 puts FibonacciNumber.new.calculate(40)
 
+# One-liner here for whole sequence:
+(1..20).inject( [0, 1] ) { | fib | fib << fib.last(2).inject(:+) }
